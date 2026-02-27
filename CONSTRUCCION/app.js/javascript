@@ -1,0 +1,15 @@
+button.addEventListener("click", function() {
+
+    if (input.value === "") {
+        return; 
+    }
+
+    const li = document.createElement("li");
+    li.textContent = input.value;
+
+    list.appendChild(li);
+
+    input.value = "";
+
+    emptyMessage.style.display = "none"; 
+});
